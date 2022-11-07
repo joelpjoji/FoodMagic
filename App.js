@@ -11,7 +11,7 @@ import {
 
 const App = () => {
   return (
-    <View>
+    <View style={styles.sectionContainer}>
       <Text>Food Magic</Text>
     </View>
   );
@@ -19,8 +19,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+    backgroundColor: '#39B54B',
   },
 });
 
