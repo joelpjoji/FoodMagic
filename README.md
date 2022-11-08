@@ -1,2 +1,2 @@
 # FoodMagic
-Kavana Test
+Lochan Test
