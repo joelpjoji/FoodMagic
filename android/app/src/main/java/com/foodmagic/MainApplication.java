@@ -12,6 +12,10 @@ import com.facebook.soloader.SoLoader;
 import com.foodmagic.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import com.facebook.react.shell.MainReactPackage;
+import java.util.Arrays;
+
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -21,22 +25,24 @@ public class MainApplication extends Application implements ReactApplication {
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
         }
-
         @Override
         protected List<ReactPackage> getPackages() {
-          @SuppressWarnings("UnnecessaryLocalVariable")
-          List<ReactPackage> packages = new PackageList(this).getPackages();
-          // Packages that cannot be autolinked yet can be added manually here, for example:
-          // packages.add(new MyReactNativePackage());
-          return packages;
+            return Arrays.<ReactPackage>asList(
+                    new MainReactPackage(),
+            new SplashScreenReactPackage()  //here
+            );
         }
-
+        
         @Override
         protected String getJSMainModuleName() {
           return "index";
         }
-      };
 
+        public ReactNativeHost getReactNativeHost() {
+        return mReactNativeHost;
+    }
+  };
+    
   private final ReactNativeHost mNewArchitectureNativeHost =
       new MainApplicationReactNativeHost(this);
 
