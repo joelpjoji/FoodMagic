@@ -2,27 +2,48 @@ import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
+  TouchableOpacity,
   StyleSheet,
   Text,
   Button,
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import data from "../data.js";
+
+const Item = ({name, ingredients,instruction,rate}) => (
+  <View style={styles.item}>
+    <Text >{name}</Text>
+    <Text >{ingredients}</Text>
+    <Text >{instruction}</Text>
+    <Text >{rate}</Text>
+
+  </View>
+);
 
 
+const HomeScreen = ({navigation}) => {
+  const {navigate} = navigation;
 
+  //const navigation = useNavigation();
 
-
-const HomeScreen = () => {
-
-  const navigation = useNavigation();
-
-
+ 
   return (
-    <View>
-      <Text>Home Screen</Text>
-      <Button
+    <View >
+        {data.map(data => {
+          
+          return (
+            <TouchableOpacity
+            onPress={() => {
+              navigate('Recipe', {item: data});
+            }}>
+            <View >
+              <Text>{data.name}</Text>
+            </View>
+          </TouchableOpacity>
+          )
+        })}
+         <Button
       title="Add "
       onPress={() =>
         navigation.navigate('AddRecipe', { name: 'Jane' })
@@ -36,7 +57,7 @@ const HomeScreen = () => {
     />
     </View>
   );
-};
+ };
 
 const styles = StyleSheet.create({
   sectionContainer: {

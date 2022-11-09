@@ -11,13 +11,28 @@ import {
 import { useNavigation } from '@react-navigation/native';
 
 
+const RecipeScreen = props => {
+  const {route} = props;
+  const {params} = route;
+  const {item} = params;
+  const {name, ingredients,instruction,rate} = item;
 
-const RecipeScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
-      <Text>Recipe Screen</Text>
+    <View style={styles.container}>
+      <View >
+        <Text >{name}</Text>
+      </View>
+      <View>
+        <Text >{ingredients}</Text>
+      </View>
+      <View >
+        <Text >{instruction}</Text>
+      </View>
+      <View>
+        <Text >{rate}</Text>
+      </View>
       <Button
       title="Home "
       onPress={() =>
@@ -27,6 +42,7 @@ const RecipeScreen = () => {
     </View>
   );
 };
+
 
 const styles = StyleSheet.create({
   sectionContainer: {
