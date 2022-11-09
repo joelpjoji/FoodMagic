@@ -81,42 +81,42 @@ export default [
 },
 {
   "id": 11,
-  "name": "Tylophoron Lichen",
-  "image": "http://dummyimage.com/231x100.png/ff4444/ffffff",
-  "ingredients": "item 1 item 2  item 3  item 4",
-  "instruction": "Fusce consequat. Nulla nisl. Nunc nisl.",
+  "name": "Mutton Sukka",
+  "image": "https://c.ndtvimg.com/2021-09/p3se4be8_mutton-sukka_625x300_01_September_21.jpg",
+  "ingredients": "500 gms Boneless Mutton1/2 tsp Turmeric Powder1 tsp Salt200 ml Water1/2 tbsp OilTo make Masala Powder:2 tsp Coriander Seeds2 tsp Black Peppercorns1/2 tsp Cumin Seeds3/4 tsp Fennel Seeds2 Red Chillies3 Cloves2 Cinnamon2 Green Cardamom",
+  "instruction": "1.Take a pressure cooker and add the mutton, turmeric powder, salt, little oil and water. Pressure cook up to 4 whistles till mutton is tender. Alternatively, add all the items in a pan and cover & cook for around 45 mins till meat is tender.2.Heat oil in a pan & add the shallots. Fry on medium heat for 1-2 mins and add the slit green chillies and curry leaves. Continue to fry on medium heat for another 5-6 mins till the shallots are translucent and light brown at the edges.3.Now add the Ginger Garlic paste and fry on low heat for 2 mins.4.Add the boiled mutton along with the stock and give a mix. Bring to a boil.5.Take a pan and add all the spices to make the masala powder. Dry roast on low heat for 2-3 mins. Set aside to cool and grind to a coarse powder.6.Add the masala powder made in the grinder earlier and give a mix.",
   "rate": 5
 },
 {
   "id": 12,
-  "name": "Cascade Aster",
-  "image": "http://dummyimage.com/172x100.png/dddddd/000000",
-  "ingredients": "item 1 item 2  item 3",
-  "instruction": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+  "name": "Lauki Roti ",
+  "image": "https://c.ndtvimg.com/2021-08/cnmg48f_roti_625x300_09_August_21.jpg",
+  "ingredients": "1 Cup Pureed Lauki1 cup Atta",
+  "instruction": "1.Add lauki and atta to a bowl.2.Use your hands and knead the dough.3.Then roll your rotis by using a roller and cook them on a tawa from both the sides.4.Serve and enjoy!",
   "rate": 4
 },
 {
   "id": 13,
-  "name": "Lecania Lichen",
-  "image": "http://dummyimage.com/183x100.png/5fa2dd/ffffff",
-  "ingredients": "item 4  item 5 item 1 item 2  item 3",
-  "instruction": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  "name": "Paneer tikka toast",
+  "image": "https://c.ndtvimg.com/2021-08/4pv9u24_paneer-tikka_625x300_03_August_21.jpg",
+  "ingredients": "1/2 Cup Paneer3 tbsp Thick curd2 tbsp Besan1/2 tbsp Chilli powder1/2 tbsp PepperA pinch of turmericSalt according to taste1/2 cup Roughly chopped onion and capsicum2 slices Bread",
+  "instruction": "1.In a large bowl mix curd, besan, and all the spices. Combine these and then add paneer, onion and capsicum. Keep it aside for 10 minutes.2.Heat some oil in a pan and then add the marinated paneer. Let it cook till golden brown.3.Then on bread add the paneer tikka and grill the bread.4.Serve with mint chutney and tomato ketchup.",
   "rate": 3
 },
 {
   "id": 14,
-  "name": "Rockcastle Aster",
-  "image": "http://dummyimage.com/201x100.png/5fa2dd/ffffff",
-  "ingredients": "item 4  item 5 item 1 item 2  item 3  item 4",
-  "instruction": "Fusce consequat. Nulla nisl. Nunc nisl.",
+  "name": "Nuts Barfi",
+  "image": "https://c.ndtvimg.com/2021-08/7c2mko1_barfi_625x300_05_August_21.jpg",
+  "ingredients": "1 Cups cashew powder1/2 cups sesame paste (toasted sesame ground, like tahini)1½ tbsp almond1½ tbsp pistachios1½ tbsp cashewnuts1/3 cup Strawberry Flavoured Syrup",
+  "instruction": " 1.In a heavy bottom pan, add ghee to heat a little.2.To the ghee, add cashew powder, sesame paste and chopped nuts. Cook all this together till the moisture evaporates, but beware not to brown the mixture.3.Add Strawberry Flavoured Syrup and cook till its combined and semi dry.4.Place barfi trays on your work platform and tip the mixture into the trays enough to fill the trays evenly.5.For garnish sprinkle Pista on the tray. Overturn the tray, on your worktable, and turn it back to let the Pistas stick into the halwa.6.Set the hallway for a 3 - 4 hours.7.Cut the halwa into bite sized squares, plate & garnish with some more Pista.",
   "rate": 3
 },
 {
   "id": 15,
-  "name": "Eschweiler's Pyxine Lichen",
-  "image": "http://dummyimage.com/133x100.png/ff4444/ffffff",
-  "ingredients": "item 5item 1 item",
-  "instruction": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+  "name": "Diabetic-Friendly Rabri ",
+  "image": "https://c.ndtvimg.com/2021-08/5i0rn2d8_rabri_625x300_06_August_21.jpg",
+  "ingredients": "1/4 Cup Oats1/4 cup Orange segments2 cups Milk1 tsp Ghee1 tsp Sugar-free/stevia (sugar substitute)",
+  "instruction": " 1.Sautee the oats in ghee for 2 minutes.2.Add milk to oats and mix well. Let it cook for 10 minutes.3.Once the oats has thickened, remove it from flame. Let it cool down.4.Add the orange segments and sugar substitute to oats mixture, mix well.5.Refrigerate for at least 30 minutes before serving.6.Garnish with chopped almonds.",
   "rate": 5
 }
 ]
