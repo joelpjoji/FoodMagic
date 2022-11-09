@@ -3,6 +3,7 @@ import {
   SafeAreaView,
   Image,
   TouchableOpacity,
+  Alert,
   StyleSheet,
   Text,
   Button,
@@ -10,6 +11,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import data from "../data.js";
+import SliderBox from "react-native-image-slider-box";
 
 
 const Item = ({name, ingredients,instruction,rate, image}) => (
@@ -41,12 +43,14 @@ const HomeScreen = ({navigation}) => {
               
             }}>
             <View >
-            <Image source={{uri: data.image}} style={{width: 200, height: 200}} />
+            //<Image source={{uri: data.image}} style={{width: 200, height: 200}} />
 
-              <Text>{data.name}</Text>
+            <SliderBox images={data.image} />
+
             </View>
           </TouchableOpacity>
           )
+          
         })}
          <Button
       title="Add "
@@ -65,9 +69,19 @@ const HomeScreen = ({navigation}) => {
  };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  carouselItem: {
+ 
+
+    // position: 'absolute',
+    borderRadius: 10,
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 6,
+      height: 6,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.5,
   },
 });
 
