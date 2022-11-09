@@ -1,7 +1,7 @@
 export default [
     {
     "id": 1,
-    "name": "Hillside Gooseberry",
+    "name": "Test Test",
     "image": "http://dummyimage.com/171x100.png/ff4444/ffffff",
     "ingredients": "item 5 item 1 item 2  item 3",
     "instruction": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
