@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
+  Image,
   TouchableOpacity,
   StyleSheet,
   Text,
@@ -11,8 +11,10 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import data from "../data.js";
 
-const Item = ({name, ingredients,instruction,rate}) => (
+
+const Item = ({name, ingredients,instruction,rate, image}) => (
   <View style={styles.item}>
+    <Image source={image} />
     <Text >{name}</Text>
     <Text >{ingredients}</Text>
     <Text >{instruction}</Text>
@@ -39,6 +41,8 @@ const HomeScreen = ({navigation}) => {
               
             }}>
             <View >
+            <Image source={{uri: data.image}} style={{width: 200, height: 200}} />
+
               <Text>{data.name}</Text>
             </View>
           </TouchableOpacity>

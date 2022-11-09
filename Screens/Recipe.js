@@ -2,7 +2,7 @@ import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
+  Image,
   StyleSheet,
   Text,
   Button,
@@ -15,13 +15,15 @@ const RecipeScreen = props => {
   const {route} = props;
   const {params} = route;
   const {item} = params;
-  const {name, ingredients,instruction,rate} = item;
+  const {name, ingredients,instruction,rate, image} = item;
 
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
       <View >
+      <Image source={{uri: item.image}} style={{width: 200, height: 200}} />
+
         <Text >{name}</Text>
       </View>
       <View>
