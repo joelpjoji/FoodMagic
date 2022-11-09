@@ -117,6 +117,6 @@ export default [
   "image": "http://dummyimage.com/133x100.png/ff4444/ffffff",
   "ingredients": "item 5item 1 item",
   "instruction": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-  "rate": 3
+  "rate": 5
 }
 ]
