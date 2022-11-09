@@ -33,9 +33,10 @@ const HomeScreen = ({navigation}) => {
         {data.map(data => {
           
           return (
-            <TouchableOpacity
+            <TouchableOpacity key={data.id}
             onPress={() => {
               navigate('Recipe', {item: data});
+              
             }}>
             <View >
               <Text>{data.name}</Text>
@@ -46,13 +47,13 @@ const HomeScreen = ({navigation}) => {
          <Button
       title="Add "
       onPress={() =>
-        navigation.navigate('AddRecipe', { name: 'Jane' })
+        navigation.navigate('AddRecipe', {item: data,key: data.id})
       }
     />
     <Button
       title="Recipe"
       onPress={() =>
-        navigation.navigate('Recipe', { name: 'Jane' })
+        navigation.navigate('Recipe', {item: data})
       }
     />
     </View>
