@@ -64,28 +64,23 @@ const HomeScreen = ({navigation}) => {
           )
         })}
          
-         <View style={styles.button}>
-         <View style={styles.AddrecipeButton}>
-    <Button
-      title="Add Recipe"
-      onPress={() =>
-        navigation.navigate('AddRecipe', {item: data,key: data.id})
-      }
-    />
-     </View>
-     <View style={styles.recipeButton}>
-     <Button
-      title="Recipe"
-      onPress={() =>
-        navigation.navigate('Recipe', {item: data,key:data.id})
-      }
-    />
-     </View>
-         </View>
+         
    
     
     </View>
     </ScrollView>
+    <TouchableOpacity
+          activeOpacity={0.7}
+          onPress={() =>
+            navigation.navigate('AddRecipe', {item: data,key: data.id})}
+          style={styles.touchableOpacityStyle}>
+          <Image source={{
+              uri:
+                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/plus_icon.png',
+            }}
+            style={styles.floatingButtonStyle}
+          />
+        </TouchableOpacity>
     </SafeAreaView>
   );
  };
@@ -110,39 +105,7 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderRadius:25,
   },
-  AddrecipeButton:{
-    position:"relative",
-    borderWidth:1,
-    borderColor:"#000",
-    height:75,
-    width:100,
-    borderRadius:30,
-    
-    
-    backgroundColor:"#ECCEE1",
 
-    
-  },
-  recipeButton:{
-    position:"relative",
-    borderWidth:1,
-    borderColor:"#000",
-    height:75,
-    width:100,
-    borderRadius:30,
-    
-    
-    backgroundColor:"#ECCEE1",
-    
-    
-    
-  },
-  button:{
-    position:"relative",
-    flexDirection:"row",
-    justifyContent:"space-between"
-    
-  },
   text:{
     
     fontSize:15,
@@ -152,7 +115,22 @@ const styles = StyleSheet.create({
   },
   rating:{
     flexDirection:"row",
-  }
+  },
+  touchableOpacityStyle: {
+    position: 'absolute',
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    right: 3,
+    bottom: 100,
+  },
+  floatingButtonStyle: {
+    resizeMode: 'contain',
+    width: 50,
+    height: 50,
+    //backgroundColor:'black'
+  },
 });
 
 export default HomeScreen;

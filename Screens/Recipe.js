@@ -22,14 +22,15 @@ const RecipeScreen = props => {
 
   return (
     <SafeAreaView>
-      <ScrollView>
-        <View style={styles.homebutton}>
+       <View style={styles.homebutton}>
           <Button
       title="Home "
       onPress={() =>
         navigation.navigate('Home', { name: 'Jane' })
       }
     /></View>
+      <ScrollView>
+       
       
       <View style={styles.container}>
      
