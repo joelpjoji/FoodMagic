@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import Rating from '../components/rating';
 
 
 const RecipeScreen = props => {
@@ -47,7 +48,7 @@ const RecipeScreen = props => {
       </View>
       <View>
         <Text style={styles.ratingHeading}>Rating</Text>
-        <Text style={styles.rating}>{rate}</Text>
+        <Text style={styles.rating}><Rating rating={rate} / ></Text>
       </View>
      
     </View>
@@ -116,7 +117,7 @@ const styles = StyleSheet.create({
   },
   homebutton:{
     flexDirection:"row",
-    
+
   }
 
 });
