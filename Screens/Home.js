@@ -7,6 +7,7 @@ import {
   Text,
   Button,
   View,
+  ScrollView,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import data from "../data.js";
@@ -31,7 +32,9 @@ const HomeScreen = ({navigation}) => {
 
  
   return (
-    <View >
+    <SafeAreaView>
+    <ScrollView>
+    <View style={styles.home} >
         {data.map(data => {
           
           return (
@@ -41,7 +44,7 @@ const HomeScreen = ({navigation}) => {
               
             }}>
             <View >
-            <Image source={{uri: data.image}} style={{width: 200, height: 200}} />
+            <Image source={{uri: data.image}} style={styles.image} />
 
               <Text>{data.name}</Text>
             </View>
@@ -61,6 +64,8 @@ const HomeScreen = ({navigation}) => {
       }
     />
     </View>
+    </ScrollView>
+    </SafeAreaView>
   );
  };
 
@@ -69,6 +74,18 @@ const styles = StyleSheet.create({
     marginTop: 32,
     paddingHorizontal: 24,
   },
+  home:{
+    flexDirection:"row",
+    flexWrap:"wrap",
+    justifyContent:"space-around",
+
+  },
+  image:{
+    height:175,
+    width:175,
+    borderColor:"#000",
+    borderWidth:1,
+  }
 });
 
 export default HomeScreen;

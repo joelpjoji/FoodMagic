@@ -18,18 +18,23 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Home"
-        screenOptions={{
-          headerShown: false,
-        }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="AddRecipe" component={AddRecipeScreen} />
-        <Stack.Screen name="Recipe" component={RecipeScreen} />
+   
+      <NavigationContainer>
+        <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerShown: false,
+      }}>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="AddRecipe" component={AddRecipeScreen} />
+      <Stack.Screen name="Recipe" component={RecipeScreen} />
 
-      </Stack.Navigator>
-    </NavigationContainer>
+    </Stack.Navigator>
+    
+  </NavigationContainer>
+  
+  
+    
   );
 };
 
@@ -38,6 +43,7 @@ const styles = StyleSheet.create({
     marginTop: 32,
     paddingHorizontal: 24,
   },
+
 });
 
 export default App;
