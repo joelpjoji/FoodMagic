@@ -46,16 +46,16 @@ const HomeScreen = ({navigation}) => {
             <View >
             <Image source={{uri: data.image}} style={styles.image} />
 
-              <Text>{data.name}</Text>
+              <Text style={styles.text}>{data.name}</Text>
             </View>
           </TouchableOpacity>
           )
         })}
          
          <View style={styles.button}>
-         <View style={styles.recipeButton}>
+         <View style={styles.AddrecipeButton}>
     <Button
-      title="Add "
+      title="Add Recipe"
       onPress={() =>
         navigation.navigate('AddRecipe', {item: data,key: data.id})
       }
@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
     flexWrap:"wrap",
     justifyContent:"space-around",
     
+    
 
   },
   image:{
@@ -100,9 +101,12 @@ const styles = StyleSheet.create({
     position:"relative",
     borderWidth:1,
     borderColor:"#000",
-    width:30,
-    height:30,
+    height:75,
+    width:100,
     borderRadius:30,
+    
+    
+    backgroundColor:"#ECCEE1",
 
     
   },
@@ -110,11 +114,38 @@ const styles = StyleSheet.create({
     position:"relative",
     borderWidth:1,
     borderColor:"#000",
+    height:75,
+    width:100,
+    borderRadius:30,
+    
+    
+    backgroundColor:"#ECCEE1",
+    
+    
+    
   },
   button:{
-    borderwidth:1,
-    borderColor:"#000",
+    position:"relative",
+    flexDirection:"row",
+    justifyContent:"space-between"
     
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+  },
+  text:{
+    
+    fontSize:15,
+    fontWeight:"bold",
+    flexWrap:"wrap",
+    flexDirection:"row"
   }
 });
 

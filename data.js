@@ -65,7 +65,7 @@ export default [
 },
 {
   "id": 9,
-  "name": "3-Ingredient Onion Pickle",
+  "name": " Onion Pickle",
   "image": "https://c.ndtvimg.com/2021-11/absdprv_3ingredient-onion-pickle_625x300_05_November_21.jpg",
   "ingredients": "2 Red Onions1 cup Warm Water1/4 cup White Vinegar1 tbsp Salt",
   "instruction": "1.Take two red onions and slice them thinly. Add this to a jar or bowl.2.Now add warm water and make sure the onions submerge in it.3.To this add white vinegar and sea salt. Mix it all properly so that the flavors combine.4.Keep it in the refrigerator till it gets cold and then serve to enjoy!",
@@ -118,5 +118,6 @@ export default [
   "ingredients": "1/4 Cup Oats1/4 cup Orange segments2 cups Milk1 tsp Ghee1 tsp Sugar-free/stevia (sugar substitute)",
   "instruction": " 1.Sautee the oats in ghee for 2 minutes.2.Add milk to oats and mix well. Let it cook for 10 minutes.3.Once the oats has thickened, remove it from flame. Let it cool down.4.Add the orange segments and sugar substitute to oats mixture, mix well.5.Refrigerate for at least 30 minutes before serving.6.Garnish with chopped almonds.",
   "rate": 5
-}
+},
+
 ]
