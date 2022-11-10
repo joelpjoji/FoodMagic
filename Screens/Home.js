@@ -51,18 +51,27 @@ const HomeScreen = ({navigation}) => {
           </TouchableOpacity>
           )
         })}
-         <Button
+         
+         <View style={styles.button}>
+         <View style={styles.recipeButton}>
+    <Button
       title="Add "
       onPress={() =>
         navigation.navigate('AddRecipe', {item: data,key: data.id})
       }
     />
-    <Button
+     </View>
+     <View style={styles.recipeButton}>
+     <Button
       title="Recipe"
       onPress={() =>
         navigation.navigate('Recipe', {item: data})
       }
     />
+     </View>
+         </View>
+   
+    
     </View>
     </ScrollView>
     </SafeAreaView>
@@ -78,6 +87,7 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     flexWrap:"wrap",
     justifyContent:"space-around",
+    
 
   },
   image:{
@@ -85,6 +95,26 @@ const styles = StyleSheet.create({
     width:175,
     borderColor:"#000",
     borderWidth:1,
+  },
+  AddrecipeButton:{
+    position:"relative",
+    borderWidth:1,
+    borderColor:"#000",
+    width:30,
+    height:30,
+    borderRadius:30,
+
+    
+  },
+  recipeButton:{
+    position:"relative",
+    borderWidth:1,
+    borderColor:"#000",
+  },
+  button:{
+    borderwidth:1,
+    borderColor:"#000",
+    
   }
 });
 
