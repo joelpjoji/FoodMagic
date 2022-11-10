@@ -17,7 +17,7 @@ export const RecipeCard = StyleSheet.create({
     alignItems: 'center',
     marginLeft: RECIPE_ITEM_MARGIN,
     marginTop: 10,
-    width: 170,
+    width: 175,
     height: RECIPE_ITEM_HEIGHT + 50,
     borderColor: '#cccccc',
     borderWidth: 1,

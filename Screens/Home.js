@@ -214,6 +214,7 @@ const HomeScreen = ({navigation}) => {
         style={{
           backgroundColor: 'white',
           borderRadius: 8,
+          marginStart:10,
           width: ITEM_WIDTH,
           paddingBottom: 10,
           shadowColor: '#000',
