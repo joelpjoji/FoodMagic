@@ -1,4 +1,6 @@
 import React from 'react';
+import { LogBox } from 'react-native';
+
 import {
   SafeAreaView,
   ScrollView,
@@ -13,6 +15,8 @@ import {
 import {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {Dimensions} from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreAllLogs();
 
 // screen sizing
 const {width, height} = Dimensions.get('window');
@@ -23,9 +27,7 @@ const AddRecipeScreen = () => {
   const [name, setName] = useState([]);
   const [instruction, setInstruction] = useState([]);
   const [ingredients, setIngredients] = useState(initialElements);
-
   const [initialElements, changeEl] = useState([]);
-
   const [idx, incr] = useState(2);
 
   const addElement = () => {
@@ -34,7 +36,6 @@ const AddRecipeScreen = () => {
       {id: idx, text: ingredients + (idx + 1)},
     ];
     incr(idx + 1);
-    console.log(initialElements.length);
     setIngredients(newArray);
     changeEl(newArray);
   };
@@ -59,18 +60,21 @@ const AddRecipeScreen = () => {
           />
 
         <Text style={styles.name}>Ingredients</Text>
-        <TextInput
-          style={styles.textInputStyle}
-          onChangeText={setIngredients}
-          value={ingredients}
-          placeholder="Ingredients"
-        />
-          <FlatList
+        <FlatList
             keyExtractor={item => item.id}
             key={item => item.id}
             data={ingredients}
             renderItem={item => <Text>{item.item.text}</Text>}
           />
+          <TextInput
+          style={styles.textInputStyle}
+          onChangeText={setIngredients}
+          value={ingredients}
+          placeholder="Ingredients"
+        />
+          
+                    </View>
+
         <View style={styles.buttons}>
           <TouchableOpacity
             onPress={addElement}
@@ -84,7 +88,6 @@ const AddRecipeScreen = () => {
             style={styles.button}>
             <Text style={styles.buttonText}> Submit For Evaluvation </Text>
           </TouchableOpacity>
-          </View>
           </View>
       </ScrollView>
     </SafeAreaView>
@@ -122,22 +125,21 @@ const styles = StyleSheet.create({
   innercontainer2: {
     textAlign: 'center',
     height: 150,
-    width: '85%',
+    textAlign: 'center',
     borderWidth: 1,
     borderColor: '#4CAF50',
     borderRadius: 7,
     marginTop: 15,
-    marginEnd:20,
   },
   buttons: {
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,
+    marginTop:100,
   },
   textInputStyle: {
     textAlign: 'center',
     height: 40,
-    width: '85%',
     borderWidth: 1,
     borderColor: '#4CAF50',
     borderRadius: 7,

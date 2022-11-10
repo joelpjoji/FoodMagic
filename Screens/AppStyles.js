@@ -70,7 +70,7 @@ export const RecipeCard = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignSelf: 'center',
-    fontFamily: 'VarelaRound-regular',
+    fontFamily: 'RocknRollOne-Regular',
   },
   rate:{
   },
