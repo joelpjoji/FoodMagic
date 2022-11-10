@@ -48,7 +48,13 @@ const RecipeScreen = props => {
       </View>
       <View>
         <Text style={styles.ratingHeading}>Rating</Text>
-        <Text style={styles.rating}><Rating rating={rate} / ></Text>
+        <View style={ styles.rating }>
+        {
+            Array(rate).fill("").map((item, index)=>{
+                return <Text key={index}>⭐️</Text>;
+            })
+        }
+    </View>
       </View>
      
     </View>
@@ -70,6 +76,7 @@ const styles = StyleSheet.create({
     width:"100%",
 
   },
+ 
   heading:{
     fontSize:30,
     fontWeight:"bold",
@@ -113,6 +120,7 @@ const styles = StyleSheet.create({
   rating:{
     fontSize:16,
     padding:10,
+    flexDirection:"row",
 
   },
   homebutton:{

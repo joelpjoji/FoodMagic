@@ -34,6 +34,9 @@ const HomeScreen = ({navigation}) => {
  
   return (
     <SafeAreaView>
+      <View>
+        <Text>Food Magic</Text>
+      </View>
     <ScrollView>
     <View style={styles.home} >
         {data.map(data => {
@@ -48,7 +51,13 @@ const HomeScreen = ({navigation}) => {
             <Image source={{uri: data.image}} style={styles.image} />
 
               <Text style={styles.text}>{data.name}</Text>
-              <Rating />
+              <View style={ styles.rating }>
+        {
+            Array(data.rate).fill("").map((item, index)=>{
+                return <Text key={index}>⭐️</Text>;
+            })
+        }
+    </View>
             </View>
           </TouchableOpacity>
          
@@ -68,7 +77,7 @@ const HomeScreen = ({navigation}) => {
      <Button
       title="Recipe"
       onPress={() =>
-        navigation.navigate('Recipe', {item: data})
+        navigation.navigate('Recipe', {item: data,key:data.id})
       }
     />
      </View>
@@ -99,6 +108,7 @@ const styles = StyleSheet.create({
     width:175,
     borderColor:"#000",
     borderWidth:1,
+    borderRadius:25,
   },
   AddrecipeButton:{
     position:"relative",
@@ -132,16 +142,6 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     justifyContent:"space-between"
     
-    
-    
-    
-    
-    
-    
-
-    
-
-    
   },
   text:{
     
@@ -149,6 +149,9 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
     flexWrap:"wrap",
     flexDirection:"row"
+  },
+  rating:{
+    flexDirection:"row",
   }
 });
 
