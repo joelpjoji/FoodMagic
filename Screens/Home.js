@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import data from "../data.js";
+import Rating from '../components/rating.js';
 
 
 const Item = ({name, ingredients,instruction,rate, image}) => (
@@ -47,8 +48,10 @@ const HomeScreen = ({navigation}) => {
             <Image source={{uri: data.image}} style={styles.image} />
 
               <Text style={styles.text}>{data.name}</Text>
+              <Rating />
             </View>
           </TouchableOpacity>
+         
           )
         })}
          
