@@ -16,15 +16,19 @@ const AddRecipeScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <View>
-      <Text>AddRecipe Screen</Text>
-      <Button
-      title="Home "
-      onPress={() =>
-        navigation.navigate('Home', { name: 'Jane' })
-      }
-    />
-    </View>
+    <SafeAreaView>
+      <ScrollView><View>
+    <Text>AddRecipe Screen</Text>
+    <Button
+    title="Home "
+    onPress={() =>
+      navigation.navigate('Home', { name: 'Jane' })
+    }
+  />
+  </View></ScrollView>
+       
+  </SafeAreaView>
+   
   );
 };
 

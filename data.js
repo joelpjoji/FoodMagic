@@ -73,7 +73,7 @@ export default [
 },
 {
   "id": 10,
-  "name": "Homemade Bread Gulab Jamun",
+  "name": " Bread Gulab Jamun",
   "image": "https://i.ndtvimg.com/i/2017-09/gulab-jamun_650x400_51505468476.jpg",
   "ingredients": "8 Bread Slices2 tbsp Malai/cream1/3 cup Milk1 tbsp Maida1 cup Ghee/Neutral oil1 cup Sugar2-4 Cardamom Pods",
   "instruction": "1.Take bread slices and grind them to make fresh breadcrumbs.2.Add malai and milk powder to this and mash lightly.3.Now add milk in small batches and knead a soft dough.4.Make tiny dough balls out of this and keep aside on a plate.5.Heat ghee/neutral oil in a pan and fry the dough balls in batches.6.Lightly shallow fry until the balls are golden brown.7.While you are frying the dough balls, in another pan heat a cup of water.8.Add the sugar and stir until slightly thick, add crushed cardamom pods and Kesar strands.9.Let the sugar syrup come to a rolling boil then take off the heat.10.Now add the fried dough balls to the sugar syrup, serve hot or cold according to your preference.",
@@ -113,7 +113,7 @@ export default [
 },
 {
   "id": 15,
-  "name": "Diabetic-Friendly Rabri ",
+  "name": " Diabetic-Friendly Rabri ",
   "image": "https://c.ndtvimg.com/2021-08/5i0rn2d8_rabri_625x300_06_August_21.jpg",
   "ingredients": "1/4 Cup Oats1/4 cup Orange segments2 cups Milk1 tsp Ghee1 tsp Sugar-free/stevia (sugar substitute)",
   "instruction": " 1.Sautee the oats in ghee for 2 minutes.2.Add milk to oats and mix well. Let it cook for 10 minutes.3.Once the oats has thickened, remove it from flame. Let it cool down.4.Add the orange segments and sugar substitute to oats mixture, mix well.5.Refrigerate for at least 30 minutes before serving.6.Garnish with chopped almonds.",
